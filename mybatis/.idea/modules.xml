@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ch01-mybatis/ch01-mybatis.iml" filepath="$PROJECT_DIR$/ch01-mybatis/ch01-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch02-mybatis/ch02-mybatis.iml" filepath="$PROJECT_DIR$/ch02-mybatis/ch02-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch03-mybatis/ch03-mybatis.iml" filepath="$PROJECT_DIR$/ch03-mybatis/ch03-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch04-mybatis/ch04-mybatis.iml" filepath="$PROJECT_DIR$/ch04-mybatis/ch04-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch05-mybatis/ch05-mybatis.iml" filepath="$PROJECT_DIR$/ch05-mybatis/ch05-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch06-mybatis-param/ch06-mybatis-param.iml" filepath="$PROJECT_DIR$/ch06-mybatis-param/ch06-mybatis-param.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch07-dynamic-sql/ch07-dynamic-sql.iml" filepath="$PROJECT_DIR$/ch07-dynamic-sql/ch07-dynamic-sql.iml" />
+    </modules>
+  </component>
+</project>

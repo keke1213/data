@@ -1,0 +1,4 @@
+com\bjpowernode\domain\Student.class
+com\bjpowernode\dao\imp\StudentImp.class
+com\bjpowernode\util\MybatisUtil.class
+com\bjpowernode\dao\StudentDao.class

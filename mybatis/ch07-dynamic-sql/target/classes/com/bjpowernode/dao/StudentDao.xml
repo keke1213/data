@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bjpowernode.dao.StudentDao">
+    <select id="selectStudent" resultType="com.bjpowernode.Student">
+        select id,name,email,age from student
+    </select>
+
+
+    <select id="selectStudentIf" resultType="com.bjpowernode.Student">
+        select id,name,email,age from student
+        where 1=1
+        <if test="name != null and name !='' ">
+            and name = #{name}
+        </if>
+        <if test="age > 0">
+            and age &gt; #{age}
+        </if>
+    </select>
+
+    <!--ForEach的使用-->
+    <select id="selectForeach" resultType="com.bjpowernode.Student">
+        select id,name,email,age from student where id in
+        <if test="list !=null and list.size > 0 ">
+            <foreach collection="list" item="stuid" open="(" close=")" separator=",">
+                #{stuid}
+            </foreach>
+        </if>
+    </select>
+
+    <!--ForEach的使用-->
+    <select id="selectForeach2" resultType="com.bjpowernode.Student">
+        select id,name,email,age from student where id in
+        <if test="list !=null and list.size > 0 ">
+            <foreach collection="list" item="stuid" open="(" close=")" separator=",">
+                #{stuid.id}
+            </foreach>
+        </if>
+    </select>
+
+    <!--sql 代码片段块-->
+    <sql id="studentSql">
+        select id,name,email,age from student where id in
+    </sql>
+    <select id="selectStudentSqlFragment" resultType="com.bjpowernode.Student">
+        <include refid="studentSql"/>
+        <if test="list !=null and list.size > 0 ">
+            <foreach collection="list" item="stuid" open="(" close=")" separator=",">
+                #{stuid.id}
+            </foreach>
+        </if>
+
+    </select>
+
+</mapper>

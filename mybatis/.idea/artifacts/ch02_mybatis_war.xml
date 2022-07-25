@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ch02-mybatis:war">
+    <output-path>$PROJECT_DIR$/ch02-mybatis/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ch02-mybatis</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ch02-mybatis.war">
+      <element id="artifact" artifact-name="ch02-mybatis:war exploded" />
+    </root>
+  </artifact>
+</component>
