@@ -1,8 +1,9 @@
 package com.test.tset01;
 
 import java.util.LinkedList;
+import java.util.concurrent.atomic.AtomicInteger;
 
-public class Example {
+public class Example  {
     /**
      * 输入： s = "abcabcbb"
      * 输出：3
@@ -14,6 +15,7 @@ public class Example {
         System.out.println(maxChildStr("pwwkew"));
     }
     public static int maxChildStr(String str){
+//        AtomicInteger
         int length = str.length();
         int max=1;
         int start=0,end=0;
@@ -22,7 +24,7 @@ public class Example {
             char c = str.charAt(end);
             if (linkedList.contains(c)){
                 linkedList.removeFirst();
-                start++;
+                start++;    
             }else {
                 linkedList.add(c);
                 max=Math.max(max,end-start+1);
