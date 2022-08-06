@@ -7,6 +7,7 @@ import com.Invoka.service.imp.SayImp;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
+import java.util.LinkedList;
 
 public class test {
     public static void main(String[] args)throws Exception {
@@ -44,5 +45,8 @@ public class test {
         o.SayHi("hi");
 
 //        Proxy proxy =new Myhanderler(,Say.class.getInterfaces(),"你好","拜拜");
+
+
+
     }
 }
