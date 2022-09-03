@@ -2,7 +2,12 @@ package com.test.tset01;
 
 public class test01 {
     public static void main(String[] args) {
-        area(new int[]{1,8,6,2,5,4,8,3,7});
+        int a = 1,b = 2;
+        a=a^b;
+        b=a^b;
+        a=a^b;
+        System.out.println(a+""+b);
+//        area(new int[]{1,8,6,2,5,4,8,3,7});
     }
 
     private static int area(int[] arr){
