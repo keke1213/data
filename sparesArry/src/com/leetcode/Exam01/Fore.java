@@ -22,6 +22,6 @@ public class Fore {
                 }
             }
         }
-
+        return 0;
     }
 }
